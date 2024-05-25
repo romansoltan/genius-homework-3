@@ -64,7 +64,7 @@
         </div>
       </div>
     </header>
-    <!-- ======= Header ======= -->  
+    <!-- ======= Header ======= -->
     <main>
       <!-- ======= Hero section ======= -->
       <section class="hero-section">
@@ -215,7 +215,8 @@
               Як нас <span class="accent-color">знайти</span>
             </h2>
             <div class="contact-content">
-              <iframe class="contact-map"
+              <iframe
+                class="contact-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1711810720770!5m2!1suk!2sua"
                 width="605"
                 height="481"
@@ -281,7 +282,8 @@
                   class="address-link"
                   href="https://maps.app.goo.gl/FTAmWWpmxCksTNbc8"
                   target="_blank"
-                  >Україна, м. Київ, <br> вул. Тараса Шевченка 5</a
+                  >Україна, м. Київ, <br />
+                  вул. Тараса Шевченка 5</a
                 >
               </li>
               <li class="address-item">
@@ -322,9 +324,62 @@
     <!-- ======= Footer ======= -->
 
     <!-- ======= Modal ======= -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="modal-title section-title">Замовити дзвінок</h2>
+        <p class="form-text">
+          Запишіться <span class="accent-color">безкоштовно</span> та отримайте
+          подарунок
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">
+              Ваше ім'я та прізвище
+            </label>
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ваше ім'я та прізвище"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel">
+              Ваш номер телефону
+            </label>
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Ваш номер телефону"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">
+              Ваша електронна пошта
+            </label>
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Ваша електронна пошта"
+            />
+          </div>
+
+          <button class="modal-btn order-call-btn" type="submit">
+            Записатись безкоштовно
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms-link" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
     <!-- ======= Modal ======= -->
