@@ -442,8 +442,8 @@ ul {
   flex-shrink: 0;
   border-radius: 32px;
 }
-.form-container {
-  background: var(--primary-c-dark);
+.contact-form-container {
+  background-color: var(--primary-c-dark);
   border-radius: 32px;
   background-image: url('../img/contact/background-form.png');
   background-size: cover;
@@ -452,13 +452,8 @@ ul {
   padding: 48px 56px;
   flex-grow: 2;
 }
-.form-title {
-  font-size: 22px;
-  font-weight: 600;
-  text-align: center;
-  color: var(--primary-c-light);
-  max-width: 276px;
-  margin: 0 auto 32px;
+.contact-form-container .form-field {
+  margin-bottom: 16px;
 }
 /* ========== Contact section ==========  */
 
