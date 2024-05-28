@@ -241,6 +241,10 @@
                       name="user-name"
                       id="user-name"
                       placeholder="Ваше ім'я та прізвище"
+                      minlength="2"
+                      maxlength="50"
+                      pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                      required
                     />
                   </div>
 
@@ -254,6 +258,8 @@
                       name="user-tel"
                       id="user-tel"
                       placeholder="Ваш номер телефону"
+                      pattern="^\+[0-9]{12}"
+                      required
                     />
                   </div>
 
@@ -267,6 +273,8 @@
                       name="user-email"
                       id="user-email"
                       placeholder="Ваша електронна пошта"
+                      pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                      required
                     />
                   </div>
 
@@ -383,41 +391,49 @@
         </p>
         <form name="modal-form" autocomplete="off">
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-name">
+            <label class="form-label visually-hidden" for="modal-user-name">
               Ваше ім'я та прізвище
             </label>
             <input
               class="form-input"
               type="text"
-              name="user-name"
-              id="user-name"
+              name="modal-user-name"
+              id="modal-user-name"
               placeholder="Ваше ім'я та прізвище"
+              minlength="2"
+              maxlength="50"
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+              required
             />
           </div>
 
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-tel">
+            <label class="form-label visually-hidden" for="modal-user-tel">
               Ваш номер телефону
             </label>
             <input
               class="form-input"
               type="tel"
-              name="user-tel"
-              id="user-tel"
+              name="modal-user-tel"
+              id="modal-user-tel"
               placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
 
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-email">
+            <label class="form-label visually-hidden" for="modal-user-email">
               Ваша електронна пошта
             </label>
             <input
               class="form-input"
               type="email"
-              name="user-email"
-              id="user-email"
+              name="modal-user-email"
+              id="modal-user-email"
               placeholder="Ваша електронна пошта"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
             />
           </div>
 
